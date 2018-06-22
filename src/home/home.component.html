@@ -1,0 +1,27 @@
+<mat-grid-list cols="12">
+  <mat-grid-tile [colspan]="1"></mat-grid-tile>
+  <mat-grid-tile [colspan]="10">
+    <mat-toolbar>
+      <a class="navbar-brand" routerLink="/">conduit</a>
+      <span class="spacer"></span>
+      <a routerLink="/" routerLinkActive="active" class="nav-link">Home</a>
+      <a routerLink="/editor" routerLinkActive="active" class="nav-link">
+        <mat-icon fontSet="fa" fontIcon="fa-edit"></mat-icon>
+        New Article
+      </a>
+      <a routerLink="/settings" routerLinkActive="active" class="nav-link">
+        <mat-icon>settings</mat-icon>
+        Settings
+      </a>
+      <a routerLink="/" routerLinkActive="active" class="nav-link">
+        <img class="user-pic" src="" alt="">
+        Settings
+      </a>
+    </mat-toolbar>
+    <mat-grid-list cols="12">
+      <mat-grid-tile [colspan]="9"></mat-grid-tile>
+      <mat-grid-tile [colspan]="3"></mat-grid-tile>
+    </mat-grid-list>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1"></mat-grid-tile>
+</mat-grid-list>
