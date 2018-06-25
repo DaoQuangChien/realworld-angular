@@ -1,0 +1,12 @@
+.spacer {
+  flex: 1 1 auto;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.fa {
+  display: flex;
+  align-items: center;
+}

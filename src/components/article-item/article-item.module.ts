@@ -1,24 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { MyMaterialModule } from '../app/material.module';
 
-import { HomeRoutingModule } from './home-routing.module';
+import { MyMaterialModule } from '../../app/material.module';
 
-import { HomePageComponent } from './home.component';
+import { ArticleItemComponent } from './article-item.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    HomeRoutingModule,
     MyMaterialModule
   ],
   declarations: [
-    HomePageComponent,
+    ArticleItemComponent
   ],
   exports: [
-    HomePageComponent,
+    ArticleItemComponent
   ],
   providers: []
 })

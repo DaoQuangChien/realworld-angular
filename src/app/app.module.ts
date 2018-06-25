@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './not-found.component';
+import { MyMaterialModule } from './material.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HomeModule } from '../home/home.module';
@@ -17,7 +18,8 @@ import { HomeModule } from '../home/home.module';
     BrowserModule,
     FormsModule,
     HomeModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MyMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

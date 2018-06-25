@@ -1,0 +1,26 @@
+<mat-card>
+  <mat-card-header>
+    <div class="article-meta">
+      <a routerLink="/">
+        <img src="articleItem.author.image" alt="Avatar">
+      </a>
+      <div class="info">
+        <mat-card-title>
+          <a routerLink="" >
+            {{articleItem.author.username}}
+          </a>
+        </mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </div>
+      <mat-card-action></mat-card-action>
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-card-title>
+      <a routerLink="">
+        {{articleItem.title}}
+      </a>
+    </mat-card-title>
+    <mat-card-subtitle>{{articleItem.description}}</mat-card-subtitle>
+  </mat-card-content>
+</mat-card>
