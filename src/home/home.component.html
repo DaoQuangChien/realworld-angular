@@ -1,8 +1,31 @@
-<mat-grid-list cols="12">
+<!-- <mat-grid-list cols="12">
   <mat-grid-tile [colspan]="9">
     <mat-tab-group>
       
     </mat-tab-group>
+    <mat-list>
+      <mat-list-item *ngFor="let article of articles">
+        <app-article-item [articleItem]="article"></app-article-item>
+      </mat-list-item>
+    </mat-list>
   </mat-grid-tile>
   <mat-grid-tile [colspan]="3"></mat-grid-tile>
-</mat-grid-list>
+</mat-grid-list> -->
+<div class="home-page">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-9">
+        <p *ngIf="!articles.length">
+          Loading articles....
+        </p>
+        <mat-list *ngIf="articles.length">
+          <mat-list-item class="mat-item" *ngFor="let article of articles">
+            <app-article-item [articleItem]="article"></app-article-item>
+          </mat-list-item>
+        </mat-list>
+      </div>
+      <div class="col-md-3">
+      </div>
+    </div>
+  </div>
+</div>

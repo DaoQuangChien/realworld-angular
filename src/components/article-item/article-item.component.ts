@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-interface ArticleItemData {
+export interface ArticleItemData {
   slug: string;
   title: string;
   description: string;
@@ -16,8 +16,8 @@ interface ArticleItemData {
 
 @Component({
   selector: 'app-article-item',
-  templateUrl: 'home.component.html',
-  styleUrls: ['home.component.css'],
+  templateUrl: 'article-item.component.html',
+  styleUrls: ['article-item.component.css'],
 })
 export class ArticleItemComponent implements OnInit {
   @Input() articleItem: ArticleItemData;

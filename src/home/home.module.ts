@@ -6,6 +6,8 @@ import { MyMaterialModule } from '../app/material.module';
 import { HomeRoutingModule } from './home-routing.module';
 
 import { HomePageComponent } from './home.component';
+import { ArticleItemComponent } from '../components/article-item/article-item.component';
+import { HomeService } from './home.service';
 
 @NgModule({
   imports: [
@@ -16,10 +18,11 @@ import { HomePageComponent } from './home.component';
   ],
   declarations: [
     HomePageComponent,
+    ArticleItemComponent,
   ],
   exports: [
     HomePageComponent,
   ],
-  providers: []
+  providers: [HomeService]
 })
 export class HomeModule { }
